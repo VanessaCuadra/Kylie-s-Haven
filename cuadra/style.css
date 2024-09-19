@@ -1,0 +1,508 @@
+:root{
+    --pink:#e9a3c0;  
+    --secondary: #ffd3ed;
+    --accent:#b24273;
+    --container-width-lg: 70%;
+    --container-width-mg: 90%;
+    --container-width-sm: 94%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear; 
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+    background-color:var(--secondary) ;
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    background: var(--pink);  
+    position: fixed;
+    top:0; left:0; right:0;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+ header .navbar a{
+    font-size: 1.7rem;
+    padding:0 1.5rem;
+    color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+
+ }
+
+ header .navbar a:hover{
+    color:var(--accent);
+ }
+
+
+.logo{
+    height: 87px;
+    padding-top: 1rem;
+    padding-left: 50px;
+}
+.nav-list{
+    width: 90px;
+    margin: 0 auto;
+    display: flex;
+    align-items: right;
+}
+
+
+
+/* HOMMEEE */
+
+.home_image {
+    height: 300px;
+    width: 300px;
+    border-radius: 2rem;
+    display: block;
+    object-fit: cover; 
+    
+}
+
+.categories h1{
+    font-size: 3.3rem;
+    text-align: center;
+    color: var(--accent);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.categories h2{
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    color:var(--accent);
+    font-style: italic;
+}
+.categories__left h3{
+    font-size: 2.5rem;
+    color: var(--accent);
+    text-align: center;
+    padding-left: 20rem;
+}
+
+.categories__right h3{
+    font-size: 2.5rem;
+    color: var(--accent);
+    text-align: center;
+    padding-left: 20rem;
+}
+
+.categories__left p{
+    font-size: 1.5rem;
+    text-align: justify;
+    padding-left: 11rem;
+    color:#ffffff;
+    font-weight: bold; 
+}
+
+.categories__right p{
+    font-size: 1.5rem;
+    text-align: justify;
+    padding-left: 5rem;
+    color:#ffffff;
+    font-weight: bold;
+}
+
+.home__categories{
+    background: var(--pink);
+    height: 900px;
+    width: 1250px;
+    border-radius: 2rem;
+    display: block;
+    object-fit: cover; 
+}
+.home__image1{
+    height: 650px;
+    padding-left: 10rem;
+    padding-top: 2rem;
+}
+
+.home__image2{
+    height: 650px;
+    padding-left: 6rem;
+    padding-top:2rem;
+}
+section .categories{
+    width: var(--container-width-lg);
+    
+}
+
+
+.home__container h3{
+    line-height: 1;
+    margin: 3rem 0 3rem;
+    width: var(--container-width-lg);
+}
+
+.home__categories{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    
+    position: flex;
+}
+
+
+
+.home__hr{
+    height: 2px;
+    border-width: 0;
+    margin-top: 1rem;
+    align-items: center;
+    
+
+}
+
+.categories__container hr{
+    margin-top: 10px; 
+    margin-bottom: 10rem; 
+}
+
+
+.left{
+    padding-bottom: 1.8rem;
+}
+
+
+.right{
+    padding-bottom: 0.1rem;
+}
+
+
+
+
+
+
+.recipes{
+    padding-top: 15rem;
+}
+
+.myrecipes1{
+    text-align: center;
+    color:var(--accent);
+    font-style: italic;
+    font-size: 3rem;
+    padding-right: 25rem;
+    padding-bottom: 2rem;
+}
+
+.container{
+
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    gap: 2rem; 
+    position: flex;
+}
+
+.recipes__container{
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    gap: 2rem;
+    position: flex;
+}
+
+
+.recipes img{
+    height: 300px;
+    width: 300px;
+    border-radius: 2rem;
+    display: flex;
+    object-fit: cover;
+    
+}
+
+.recipes hr{
+    height: 2px;
+    border-width: 0;
+    background-color: var(--color-secondary);
+    margin-top: 5rem;
+}
+
+.myrecipes{
+    font-family: 'Libre Baskerville', serif;
+    
+    font-weight: 300;
+    line-height: 1;
+    margin: 1.4rem 33rem 5rem;
+    width: var(--container-width-lg);
+    padding-bottom: 4rem;
+    font-size: 45px;
+    font-weight: 400;
+    padding-left: 0.5rem;
+    padding-top: 0.1rem;
+    
+
+  
+}
+
+
+
+
+.recipes__info{
+    padding: 2.3rem;
+    font-family: 'Martel Sans', sans-serif;
+    letter-spacing: 3%;
+    font-size: 1.7rem;
+    border-width: var(--container-width-lg);
+}
+
+
+
+.recipe {
+    background: var(--color-bg);
+    font-size: 3rem;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: white;
+    border-radius: 2rem;
+    text-align: center;
+    transition: var(--transition);
+    box-shadow: inset;
+
+    
+}
+
+.recipes{
+    padding-left: 1.03rem;
+    margin-top: 0 auto;
+    transition: transform .2s;
+    padding-left: 37rem;
+    
+    
+    
+}
+
+.recipe:hover{
+    background: var(--color-primary);
+    border-radius: 2rem;
+    transform: scale(1.03);
+    box-shadow: none;
+    position: flex;
+    box-shadow: 6px 6px 8px #888888;
+    
+}
+.go__back{
+    padding-top: 15rem;
+    font-style: italic;
+    font-size: 2rem;
+    color: var(--accent);
+    padding-left: 5rem;
+   background-color: var(--secondary);
+}
+
+.go__back:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.food{
+    padding-top: 10rem;
+    padding-left: 35rem;
+}
+
+.food h1{
+    padding-bottom: 2rem;
+    color: var(--accent);
+    font-size: 3rem;
+}
+
+
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.7;
+    color: var(--accent);
+    background: var(--secondary);
+    margin: 0 auto;
+    
+    
+}
+
+.ingredients h1{
+    text-align: center;
+    padding-left: 2rem;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+
+
+.cinnamonroll__ingredients1{
+    padding-left: 40rem;
+    padding-top: 2rem;
+    display: grid;
+    gap: 1rem;
+    width: 50rem;
+    float: left;
+    font-size: 1.5rem;
+    
+}
+    
+.cinnamonroll__ingredients2{
+    padding-left: 25rem;
+    padding-top: 6rem;   
+    display: grid;
+    gap: 1rem;
+    width:50rem;
+    font-size: 1.5rem;
+}
+
+.cinnamonroll__ingredients2 h2{
+    padding-top: 1rem;
+}
+
+.cinnamonroll__steps{
+    padding-left: 45rem;
+    padding-top: 10rem;
+    width: 90rem;
+    font-size: 1.5rem;
+}
+
+.brownies__ingredients{
+    padding-left: 40rem;
+    padding-top: 2rem;
+    display: grid;
+    gap: 1rem;
+    width: 50rem;
+    float: left;
+    font-size: 1.5rem;
+    
+}
+
+.brownies__steps{
+    padding-left: 45rem;
+    padding-top: 40rem;
+    width: 90rem;
+    font-size: 1.5rem;
+}
+
+.macarons__ingredients1{
+    padding-left: 17rem;
+    
+}
+
+.tempura__steps{
+    padding-left: 45rem;
+    padding-top: 40rem;
+    width: 90rem;
+    font-size: 1.5rem;
+
+}
+.pancake__steps{
+    padding-left: 45rem;
+    padding-top: 40rem;
+    width: 90rem;
+    font-size: 1.5rem;
+
+}
+.croissant__steps{
+    padding-left: 45rem;
+    padding-top: 40rem;
+    width: 90rem;
+    font-size: 1.5rem;
+
+}
+
+.vanilla__steps{
+    padding-left: 45rem;
+    padding-top: 40rem;
+    width: 90rem;
+    font-size: 1.5rem;
+}
+
+.carbo__steps{
+    padding-left: 45rem;
+    padding-top: 48rem;
+    width: 90rem;
+    font-size: 1.5rem;
+}
+
+.pie__steps{
+    padding-left: 45rem;
+    padding-top: 48rem;
+    width: 90rem;
+    font-size: 1.5rem;
+}
+.icons{
+    align-items: center;
+    color: var(--accent);
+    padding-top: 30rem;
+    padding-left: 50rem;
+    padding-bottom: 1rem;
+}
+
+
+.icons__index{
+    align-items: center;
+    color: var(--color-secondary);
+    position: flex;
+    
+    padding-left: 26rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0 ;
+}
+
+.fb__icon{
+    font-size: 45px;
+    padding-left: 6rem;
+    padding-right: 3rem;
+}
+
+.fb__icon:hover{
+    cursor: pointer;
+    color: var(--color-primary);
+    transition: ease-in-out;
+}
+
+.ig__icon{
+    font-size: 45px;
+    padding-right: 3rem;
+   
+}
+
+.ig__icon:hover{
+    cursor: pointer;
+    color: var(--color-primary);
+    transition: ease-in-out;
+}
+
+.twt__icon{
+    font-size: 45px;
+    padding-right: 3rem;
+}
+
+.twt__icon:hover{
+    
+        cursor: pointer;
+        color: var(--color-primary);
+        transition: ease-in-out;
+
+}
